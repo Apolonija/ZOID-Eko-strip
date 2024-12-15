@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EKO STRIP</title>
+    <style>
+        /* Postavljanje osnovnog stila */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .pdf-container {
+            width: 100%; /* Prilagodba širine za cijeli ekran */
+            height: calc(100vh - 60px); /* Visina ekrana minus naslov */
+            background-color: #222;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Projekt: EKO STRIP</h1>
+    <div class="pdf-container">
+        <iframe src="zoidg.pdf" title="PDF Preglednik"></iframe>
+    </div>
+</body>
+</html>
